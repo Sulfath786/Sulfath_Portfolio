@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certificates — Sulfath</title>
+  <meta name="description" content="A gallery of Sulfath's certificates.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="certificates-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header certificates-header">
+    <div class="container certificates-topbar">
+      <div class="title-pill" aria-label="Certificates page title">
+
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="certifications.html" class="active" aria-current="page">Certificates</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="certificates-main">
+    <div class="container certificates-shell">
+      <div class="certificates-grid certificate-gallery" aria-label="Certificate gallery">
+        <a class="certificate-card" href="certificates/certificate-1.jpg" target="_blank" rel="noreferrer" aria-label="Open certificate image 1">
+          <img src="certificates/certificate-1.jpg" alt="Certificate 1" loading="lazy">
+          <span class="certificate-placeholder-mark" aria-hidden="true">01</span>
+        </a>
+        <a class="certificate-card" href="certificates/certificate-2.webp" target="_blank" rel="noreferrer" aria-label="Open certificate image 2">
+          <img src="certificates/certificate-2.webp" alt="Certificate 2" loading="lazy">
+          <span class="certificate-placeholder-mark" aria-hidden="true">02</span>
+        </a>
+        <a class="certificate-card" href="certificates/certificate-3.jpg" target="_blank" rel="noreferrer" aria-label="Open certificate image 3">
+          <img src="certificates/certificate-3.jpg" alt="Certificate 3" loading="lazy">
+          <span class="certificate-placeholder-mark" aria-hidden="true">03</span>
+        </a>
+        <a class="certificate-card" href="certificates/certificate-4.jpg" target="_blank" rel="noreferrer" aria-label="Open certificate image 4">
+          <img src="certificates/certificate-4.jpg" alt="Certificate 4" loading="lazy">
+          <span class="certificate-placeholder-mark" aria-hidden="true">04</span>
+        </a>
+        <a class="certificate-card certificate-card--wide" href="certificates/certificate-5.jpeg" target="_blank" rel="noreferrer" aria-label="Open certificate image 5">
+          <img src="certificates/certificate-5.jpeg" alt="Certificate 5" loading="lazy">
+          <span class="certificate-placeholder-mark" aria-hidden="true">05</span>
+        </a>
+        <a class="certificate-card" href="certificates/certificate-6.jpeg" target="_blank" rel="noreferrer" aria-label="Open certificate image 6">
+          <img src="certificates/certificate-6.jpeg" alt="Certificate 6" loading="lazy">
+          <span class="certificate-placeholder-mark" aria-hidden="true">06</span>
+        </a>
+        <a class="certificate-card" href="certificates/certificate-7.jpeg" target="_blank" rel="noreferrer" aria-label="Open certificate image 7">
+          <img src="certificates/certificate-7.jpeg" alt="Certificate 7" loading="lazy">
+          <span class="certificate-placeholder-mark" aria-hidden="true">07</span>
+        </a>
+        <a class="certificate-card" href="certificates/certificate-8.jpeg" target="_blank" rel="noreferrer" aria-label="Open certificate image 8">
+          <img src="certificates/certificate-8.jpeg" alt="Certificate 8" loading="lazy">
+          <span class="certificate-placeholder-mark" aria-hidden="true">08</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year"></span> Sulfath P C. Made with intention.</p></div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.querySelectorAll(".certificate-card img").forEach((image) => {
+      const card = image.closest(".certificate-card");
+      const showImage = () => card.classList.add("has-image");
+      image.addEventListener("load", showImage);
+      image.addEventListener("error", () => card.classList.add("image-missing"));
+      if (image.complete && image.naturalWidth > 0) showImage();
+    });
+  </script>
+</body>
+</html>

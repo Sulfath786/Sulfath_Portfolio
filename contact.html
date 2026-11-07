@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Say Hello — Sulfath</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="certifications.html">Certificates</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+   <section id="contact" class="contact-card">
+    <div class="contact-layout">
+     <div class="contact-intro">
+      <div class="section-heading">
+      
+        <h1>Let’s make something meaningful.</h1>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:sulfathsulfath31@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> sulfathsulfath31@gmail.com</a>
+        <a href="https://github.com/Sulfath786" target="_blank" rel="noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/sulfath-p-c-835056376" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      </div>
+     </div>
+      <form id="contact-form" name="contact" method="POST" netlify action="/thank-you.html" class="contact-form">
+        <input type="hidden" name="form-name" value="contact">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="How should I address you?" required>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you have in mind..." required></textarea>
+
+        <button type="submit">Send message <span aria-hidden="true">↗</span></button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+ 
+  <script src="script.js"></script>
+
+</body>
+</html>
