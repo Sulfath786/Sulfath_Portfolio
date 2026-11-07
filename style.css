@@ -1300,8 +1300,10 @@ main {
   }
 
   .certificates-topbar .nav {
+    flex: 1 1 100%;
     width: 100%;
-    justify-content: center;
+    min-width: 0;
+    justify-content: flex-end;
   }
 
   .nav-toggle {
@@ -1322,6 +1324,10 @@ main {
     border-radius: 14px;
     background: var(--surface);
     box-shadow: var(--shadow);
+  }
+
+  .certificates-topbar .nav-menu {
+    width: 100%;
   }
 
   .nav-menu.open {
