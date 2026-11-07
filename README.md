@@ -6,7 +6,7 @@ Hi, I'm Sulfath — an aspiring full‑stack developer and data analyst. I enjoy
 
  Live Demo: 
 
-Visit Portfolio - https://sulfath786.github.io/FUTURE_FS_01/
+Visit Portfolio - https://github.com/Sulfath786/Sulfath_Portfolio.git
 
 Tech Stack:
 
