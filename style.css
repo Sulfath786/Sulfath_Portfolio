@@ -1295,6 +1295,14 @@ main {
     min-height: 70px;
   }
 
+  .certificates-topbar .title-pill {
+    display: none;
+  }
+
+  .certificates-topbar .nav {
+    width: 100%;
+  }
+
   .nav-toggle {
     display: inline-flex;
   }
