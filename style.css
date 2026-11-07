@@ -1301,6 +1301,7 @@ main {
 
   .certificates-topbar .nav {
     width: 100%;
+    justify-content: center;
   }
 
   .nav-toggle {
